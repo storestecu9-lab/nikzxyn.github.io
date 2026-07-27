@@ -40,6 +40,17 @@
     </style>
 </head>
 <body>
+<!-- MUSIK LATAR DENGAN TOMBOL -->
+<audio id="musikLatar" loop>
+  <source 
+      src="https://limewire.com/d/MF2oE#79kbQX2uu8" 
+      type="audio/mpeg">
+
+
+<!-- TOMBOL KONTROL MUSIK -->
+<button onclick="document.getElementById('musikLatar').play()" style="position:fixed;bottom:20px;right:80px;padding:10px 15px;border-radius:50%;border:none;background:#8a2be2;color:white;font-size:18px;z-index:999;">🔊</button>
+<button onclick="document.getElementById('musikLatar').pause()" style="position:fixed;bottom:20px;right:20px;padding:10px 15px;border-radius:50%;border:none;background:#8a2be2;color:white;font-size:18px;z-index:999;">🔇</button>
+    
 
 <header>
     <!-- GANTI LINK DI BAWAH DENGAN LINK LOGO BARU KAMU -->
