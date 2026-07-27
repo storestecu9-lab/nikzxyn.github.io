@@ -114,26 +114,26 @@
         .btn-wa:active{transform:scale(0.97);}
 
         .tombol-musik{
-            position:fixed;
-            bottom:20px;
-            right:20px;
-            width:58px;
-            height:58px;
-            background:linear-gradient(135deg,#7209b7,#b5179e);
-            color:white;
-            border:none;
-            border-radius:50%;
-            font-size:25px;
-            cursor:pointer;
-            box-shadow:0 0 20px #7209b7;
-            animation: nyalaTombol 1.5s infinite alternate;
-            z-index:999;
-            !important;
-        }
-        @keyframes nyalaTombol{
-            0%{box-shadow:0 0 15px #7209b7;}
-            100%{box-shadow:0 0 30px #b5179e;}
-        }
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 58px;
+    height: 58px;
+    background: linear-gradient(135deg,#7209b7,#b5179e);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #7209b7;
+    animation: nyalaTombol 1.5s infinite alternate;
+    z-index: 9999 !important;
+}
+@keyframes nyalaTombol{
+    0%{box-shadow:0 0 15px #7209b7;}
+    100%{box-shadow:0 0 30px #b5179e;}
+}
+        
     </style>
 </head>
 <body>
