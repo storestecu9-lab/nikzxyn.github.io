@@ -3,77 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikzxyn Store - Toko Online</title>
+    <title>Nikz Xiter - Toko Kamu</title>
     <style>
-        * { margin: 0; padding: 0; font-family: Arial, sans-serif; box-sizing: border-box; }
-        body { background: #f8f9fa; }
-        header { background: #2563eb; color: white; padding: 25px; text-align: center; }
-        .container { max-width: 1200px; margin: 25px auto; padding: 0 15px; }
-        h2 { text-align: center; margin-bottom: 25px; color: #222; }
-        .produk { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-        .kartu { background: white; padding: 18px; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); text-align: center; }
-        .kartu h3 { margin: 12px 0; color: #111; }
-        .deskripsi { color: #555; font-size: 14px; margin-bottom: 10px; }
-        .harga { color: #dc2626; font-weight: bold; font-size: 20px; margin: 10px 0; }
-        .btn-wa { display: inline-block; background: #25d366; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 8px; }
-        .btn-wa:hover { background: #1da851; }
-        .kontak { background: #eef2ff; padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px; }
-        footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 30px; }
+        *{margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif;}
+        body{background:#f8f9fa; color:#333; padding:20px; max-width:450px; margin:0 auto;}
+
+        /* HEADER & LOGO */
+        header{text-align:center; padding:30px 20px; background:linear-gradient(135deg,#2d3436,#636e72); border-radius:16px; margin-bottom:25px; box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+        .logo{width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid white; box-shadow:0 0 15px rgba(255,255,255,0.2); margin-bottom:15px;}
+        h1{color:white; font-size:28px; margin-bottom:5px;}
+        .deskripsi{color:#dfe6e9; font-size:15px;}
+
+        /* PRODUK */
+        .produk{background:white; border-radius:12px; padding:20px; margin-bottom:18px; box-shadow:0 3px 10px rgba(0,0,0,0.08); transition:all 0.3s;}
+        .produk:hover{transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.12);}
+        .nama-barang{font-size:18px; font-weight:bold; margin-bottom:8px; color:#2d3436;}
+        .harga{font-size:20px; font-weight:bold; color:#e17055; margin-bottom:12px;}
+        .keterangan{font-size:14px; color:#636e72; margin-bottom:15px; line-height:1.5;}
+
+        /* TOMBOL */
+        .btn{display:block; text-align:center; padding:12px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:15px; transition:0.3s;}
+        .wa{background:#25d366; color:white; margin-bottom:10px;}
+        .wa:hover{background:#128c7e; transform:scale(1.02);}
+        .lainnya{background:#0984e3; color:white;}
+        .lainnya:hover{background:#0652DD;}
+
+        footer{text-align:center; margin-top:30px; font-size:13px; color:#999;}
     </style>
 </head>
 <body>
 
-<header> 
-    <img src="https://i.imgur.com/F5vHPQg.jpeg" alt="Nikz Xiter" style="width:200px; height:auto; display:block; margin:0 auto 15px;">
-    <h1>🎮 Nikzxyn Store 👑</h1>
-    <p>Belanja Mudah, Aman & Terpercaya</p>
+<header>
+    <!-- GANTI LINK DI BAWAH DENGAN LINK LOGO BARU KAMU -->
+    <img src="https://i.imgur.com/F5vHPQg.jpeg" alt="Nikz Xiter" class="logo">
+    <h1>Nikz Xiter</h1>
+    <p class="deskripsi">Toko Terpercaya & Barang Berkualitas ✨</p>
 </header>
 
-<div class="container">
-    <h2>📦 Daftar Produk Kami</h2>
-    
-    <div class="produk">
-        <div class="kartu">
-            <h3>AIMBOT ANOMALI OB54</h3>
-            <p class="deskripsi">Kualitas terjamin, barang bagus, gacor 100% aman</p>
-            <div class="harga">Rp 3.000</div>
-            <a href="https://wa.me/6289531578216?text=Halo%20Nikzxyn%20Store,%20saya%20mau%20beli%20AIMBOT ANOMALI OB54%20" class="btn-wa" target="_blank">💬 Pesan Lewat WA</a>
-        </div>
-
-        <div class="kartu">
-            <h3> SXH TRICK HS 70%</h3>
-            <p class="deskripsi">Kualitas terjamin, barang bagus, gacor 100% aman</p>
-            <div class="harga">Rp 5.000</div>
-            <a href="https://wa.me/6289531578216?text=Halo%20Nikzxyn%20Store,%20saya%20mau%20beli%20SXH TR!CK HS 70% 👑%20" class="btn-wa" target="_blank">💬 Pesan Lewat WA</a>
-        </div>
-
-        <div class="kartu">
-            <h3> YZM SETTINGS MEDIUM 3</h3>
-            <p class="deskripsi">Kualitas terjamin, barang bagus, gacor 100% aman</p>
-            <div class="harga">Rp 7.000</div>
-            <a href="https://wa.me/6289531578216?text=Halo%20Nikzxyn%20Store,%20saya%20mau%20beli%20YZM SETTINGS MEDIUM👑%20" class="btn-wa" target="_blank">💬 Pesan Lewat WA</a>
-        </div>
-
-         <div class="kartu">
-            <h3>LOCK HEAD 50% OB54 V1</h3>
-            <p class="deskripsi">Kualitas terjamin, barang bagus, gacor 100% aman</p>
-            <div class="harga">Rp 2.000</div>
-            <a href="https://wa.me/6289531578216?text=Halo%20Nikzxyn%20Store,%20saya%20mau%20beli%20LOCK HEAD 50% V1🚀%20" class="btn-wa" target="_blank">💬 Pesan Lewat WA</a>
-         </div>
+<div class="produk">
+    <div class="nama-barang">YZM SETTINGS MEDIUM</div>
+    <div class="harga">Rp 7.000</div>
+    <div class="keterangan">
+        Isi keterangan barang disini ya.<br>
+        Barang baru / Berkualitas / Aman dikirim.
     </div>
+    <a href="https://wa.me/6289531578216" class="btn wa">📩 Pesan Langsung WhatsApp</a>
+    <a href="#" class="btn lainnya">🔗 Lihat Produk Lainnya</a>
+</div>
 
-    <div class="kontak">
-        <h3>📞 Hubungi Kami</h3>
-        <p>WhatsApp: +62 895-6349-56744</p>
-        <p>Buka: Senin - Minggu 08.00 - 21.00 WIB</p>
-    <p>Semua file sudah di ujicoba sebelum di jual 100% aman </p>
-    </div>
-</div> 
-
-<footer>
-    <p>Nikzxyn Store © 2026 | Semua Hak Dilindungi</p>
-</footer>
+<footer>© 2026 Nikz Xiter - Semua Hak Dilindungi</footer>
 
 </body>
-  </html>
-  
+</html>
