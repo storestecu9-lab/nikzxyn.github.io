@@ -3,106 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikz Xiter - Toko Kamu</title>
+    <title>Nikz Xiter 🛒</title>
     <style>
-        *{margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif;}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
         body{
-  background:#1a0b2e; /* Ungu tua pekat */
-  color:#ffffff; /* Tulisan putih jelas */
-  padding:20px;
-  max-width:450px;
-  margin:0 auto;
-  box-shadow:0 0 25px 8px rgba(138,43,226,0.6); /* EFEK UNGU MENYALA */
+            /* GANTI LINK DI BAWAH DENGAN LINK GAMBAR ANIME KAMU */
+            background: linear-gradient(rgba(10,0,30,0.8), rgba(50,0,90,0.8)), url("TAHAN_DISINI_LINK_GAMBAR_ANIME_MU");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height:100vh;
+            padding:20px 15px;
+            animation: latarGerak 20s infinite alternate ease-in-out;
         }
-        
+        @keyframes latarGerak{
+            0%{background-position:left top;}
+            100%{background-position:right bottom;}
+        }
 
-        /* HEADER & LOGO */
-        header{text-align:center; padding:30px 20px; background:linear-gradient(135deg,#2d3436,#636e72); border-radius:16px; margin-bottom:25px; box-shadow:0 4px 12px rgba(0,0,0,0.15);}
-        .logo{width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid white; box-shadow:0 0 15px rgba(255,255,255,0.2); margin-bottom:15px;}
-        h1{color:white; font-size:28px; margin-bottom:5px;}
-        .deskripsi{color:#dfe6e9; font-size:15px;}
+        .kepala{
+            text-align:center;
+            color:white;
+            margin-bottom:30px;
+            padding:25px 20px;
+            background:rgba(20,0,50,0.7);
+            border-radius:20px;
+            border:2px solid #c77dff;
+            box-shadow:0 0 25px #9d4edd, 0 0 50px rgba(157,78,221,0.4);
+            animation: nyalaLembut 2s infinite alternate;
+            backdrop-filter:blur(10px);
+        }
+        @keyframes nyalaLembut{
+            0%{box-shadow:0 0 25px #9d4edd, 0 0 50px rgba(157,78,221,0.3);}
+            100%{box-shadow:0 0 35px #c77dff, 0 0 70px rgba(199,125,255,0.5);}
+        }
 
-        /* PRODUK */
-        .produk{background:white; border-radius:12px; padding:20px; margin-bottom:18px; box-shadow:0 3px 10px rgba(0,0,0,0.08); transition:all 0.3s;}
-        .produk:hover{transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.12);}
-        .nama-barang{font-size:18px; font-weight:bold; margin-bottom:8px; color:#2d3436;}
-        .harga{font-size:20px; font-weight:bold; color:#e17055; margin-bottom:12px;}
-        .keterangan{font-size:14px; color:#636e72; margin-bottom:15px; line-height:1.5;}
+        .logo{
+            width:130px;
+            height:130px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid #e0aaff;
+            margin-bottom:12px;
+            box-shadow:0 0 20px #c77dff;
+            animation: putarLambat 8s linear infinite;
+        }
+        @keyframes putarLambat{
+            0%{transform:rotate(0deg);}
+            100%{transform:rotate(360deg);}
+        }
 
-        /* TOMBOL */
-        .btn{display:block; text-align:center; padding:12px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:15px; transition:0.3s;}
-        .wa{background:#25d366; color:white; margin-bottom:10px;}
-        .wa:hover{background:#128c7e; transform:scale(1.02);}
-        .lainnya{background:#0984e3; color:white;}
-        .lainnya:hover{background:#0652DD;}
+        .kepala h1{
+            font-size:32px;
+            color:#e0aaff;
+            margin-bottom:8px;
+            text-shadow:0 0 15px #c77dff;
+        }
+        .kepala p{
+            font-size:15px;
+            color:#d8b4ff;
+            text-shadow:0 0 8px rgba(224,170,255,0.5);
+        }
 
-        footer{text-align:center; margin-top:30px; font-size:13px; color:#999;}
+        .produk{
+            background:rgba(255,255,255,0.92);
+            border-radius:18px;
+            padding:20px;
+            margin-bottom:20px;
+            border-left:4px solid #9d4edd;
+            box-shadow:0 0 15px rgba(157,78,221,0.3);
+            transition:all 0.3s ease;
+        }
+        .produk:active{
+            transform:scale(0.97);
+            box-shadow:0 0 25px #c77dff;
+        }
+        .nama-barang{
+            font-size:20px;
+            font-weight:bold;
+            color:#3c096c;
+            margin-bottom:8px;
+        }
+        .harga{
+            font-size:22px;
+            font-weight:bold;
+            color:#d00000;
+            margin-bottom:10px;
+            text-shadow:0 0 5px rgba(208,0,0,0.3);
+        }
+        .keterangan{
+            font-size:14px;
+            color:#444;
+            margin-bottom:15px;
+            line-height:1.6;
+        }
+
+        .btn-wa{
+            display:block;
+            background:linear-gradient(90deg,#25d366,#128c7e);
+            color:white;
+            text-align:center;
+            padding:13px;
+            border-radius:12px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:15px;
+            box-shadow:0 0 15px rgba(37,211,102,0.4);
+            transition:all 0.3s;
+        }
+        .btn-wa:active{transform:scale(0.97);}
+
+        .tombol-musik{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            width:58px;
+            height:58px;
+            background:linear-gradient(135deg,#7209b7,#b5179e);
+            color:white;
+            border:none;
+            border-radius:50%;
+            font-size:25px;
+            cursor:pointer;
+            box-shadow:0 0 20px #7209b7;
+            animation: nyalaTombol 1.5s infinite alternate;
+            z-index:999;
+        }
+        @keyframes nyalaTombol{
+            0%{box-shadow:0 0 15px #7209b7;}
+            100%{box-shadow:0 0 30px #b5179e;}
+        }
     </style>
 </head>
 <body>
-<!-- MUSIK LATAR DENGAN TOMBOL -->
-<audio id="musikLatar" loop>
-  <source 
-      src="https://storestecu9-lab.github.io/nikzxyn.github.io/tiktokoa.com1785130067_HYHiBTwbWBsLuTUj0s47.mp3"
-      type="audio/mpeg">
-</audio>
 
-<button onclick="document.getElementById('musikLatar').play()" style="position:fixed;bottom:20px;right:80px;padding:10px 15px;border-radius:50%;border:none;background:#8a2be2;color:white;font-size:18px;z-index:999;">🔊</button>
-<button onclick="document.getElementById('musikLatar').pause()" style="position:fixed;bottom:20px;right:20px;padding:10px 15px;border-radius:50%;border:none;background:#8a2be2;color:white;font-size:18px;z-index:999;">🔇</button>
-    
-    
-<header>
-    <!-- GANTI LINK DI BAWAH DENGAN LINK LOGO BARU KAMU -->
-    <img src="https://i.imgur.com/F5vHPQg.jpeg" alt="Nikz Xiter" class="logo">
-    <h1>Nikz Xiter</h1>
-    <p class="deskripsi">Toko Terpercaya & Barang Berkualitas ✨</p>
-</header>
+<div class="kepala">
+    <img src="https://i.imgur.com/F5vHPQg.jpeg" class="logo" alt="Nikz Xiter">
+    <h1>Nikz Xiter ✨</h1>
+    <p>Toko Terpercaya • Barang Dijamin Aman 100% • Pelayanan Cepat</p>
+</div>
 
 <div class="produk">
-    <div class="nama-barang">YZM SETTINGS MEDIUM</div>
-    <div class="harga">Rp 7.000</div>
+    <div class="nama-barang">🔥 YZM SETTINGS MEDIUM</div>
+    <div class="harga">💸 Rp 7.000</div>
     <div class="keterangan">
-        Isi keterangan barang disini ya.<br>
-        Barang baru / Berkualitas / Aman 100% / Gacor.
+        • Gacor banget dipakai<br>
+        • Anti banned & aman semua HP<br>
+        • Gratis update selamanya
     </div>
-    <a href="https://wa.me/6289531578216" class="btn wa">📩 Pesan Langsung WhatsApp</a>
-    <a href="#" class="btn lainnya">🔗 Lihat Produk Lainnya</a>
-</div>
-    
-<div class="produk">
-  <div class="nama-barang">AIMBOT ANOMALI OB54</div>
-  <div class="harga">Rp 3.000</div>
-  <div class="keterangan">
-    Kualitas terjamin, barang bagus,<br>
-    Gacor & 100% Aman dipakai.
-  </div>
-  <a href="https://wa.me/6289531578216" class="btn wa">📩 Pesan Langsung WhatsApp</a>
-  <a href="#" class="btn lainnya">🔗 Lihat produk lainnya</a>
-</div>
-    
-<div class="produk">
-  <div class="nama-barang">SXH TRICK HS 70%</div>
-  <div class="harga">Rp 5.000</div>
-  <div class="keterangan">
-    Kualitas terjamin, barang bagus,<br>
-    Gacor & 100% Aman dipakai.
-  </div>
-  <a href="https://wa.me/6289531578216" class="btn wa">📩 Pesan Langsung WhatsApp</a>
-  <a href="#" class="btn lainnya">🔗 Lihat produk lainnya</a>
-   </div>
-    
- <div class="produk">
-  <div class="nama-barang">LOCK HEAD 50% OB54 V1</div>
-  <div class="harga">Rp 2.000</div>
-  <div class="keterangan">
-    Kualitas terjamin, barang bagus,<br>
-    Gacor & 100% Aman dipakai.
-  </div>
-  <a href="https://wa.me/6289531578216" class="btn wa">📩 Pesan Langsung WhatsApp</a>
-  <a href="#" class="btn lainnya">🔗 Lihat produk lainnya</a>
+    <a href="https://wa.me/6289531578216?text=Halo%20Nikz%20Xiter%2C%20saya%20mau%20pesan%20YZM%20SETTINGS" class="btn-wa">💬 PESAN SEKARANG</a>
 </div>
 
-<footer>© 2026 Nikz Xiter - Semua Hak Dilindungi</footer>
+<div class="produk">
+    <div class="nama-barang">🔥 AIMBOT ANOMALI OB54</div>
+    <div class="harga">💸 Rp 3.000</div>
+    <div class="keterangan">
+        • Lock kepala akurat<br>
+        • Bisa diatur sensitifitasnya<br>
+        • Aman dipakai turnamen
+    </div>
+    <a href="https://wa.me/6289531578216?text=Halo%20Nikz%20Xiter%2C%20saya%20mau%20pesan%20AIMBOT%20ANOMALI" class="btn-wa">💬 PESAN SEKARANG</a>
+</div>
+
+<div class="produk">
+    <div class="nama-barang">🔥 SXH TRICK HS 70%</div>
+    <div class="harga">💸 Rp 5.000</div>
+    <div class="keterangan">
+        • Membantu naikkan headshot<br>
+        • Ringan tidak lemot HP<br>
+        • Cara pakai mudah banget
+    </div>
+    <a href="https://wa.me/6289531578216?text=Halo%20Nikz%20Xiter%2C%20saya%20mau%20pesan%20SXH%20TRICK" class="btn-wa">💬 PESAN SEKARANG</a>
+</div>
+
+<audio id="musikLatar" loop>
+    <source src="tiktokoa.com1785130067_HYHiBTwbWBsLuTUj0s47.mp3" type="audio/mpeg">
+
+
+<button class="tombol-musik" onclick="mainkanMusik()">🔇</button>
+
+<script>
+let sedangBunyi = false;
+const audio = document.getElementById('musikLatar');
+const tombol = document.querySelector('.tombol-musik');
+
+function mainkanMusik(){
+    if(!sedangBunyi){
+        audio.play();
+        tombol.innerText = '🔊';
+        sedangBunyi = true;
+    }else{
+        audio.pause();
+        tombol.innerText = '🔇';
+        sedangBunyi = false;
+    }
+}
+</script>
 
 </body>
 </html>
