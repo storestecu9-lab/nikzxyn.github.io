@@ -180,7 +180,8 @@
     <source src="tiktokoa.com1785130067_HYHiBTwbWBsLuTUj0s47.mp3" type="audio/mpeg">
 
 
-<button class="tombol-musik" onclick="mainkanMusik()">🔇</button>
+<button class="tombol-musik" 
+    onclick="mainkanMusik()">🔇</button>
 
 <script>
 let sedangBunyi = false;
@@ -190,14 +191,15 @@ const tombol = document.querySelector('.tombol-musik');
 function mainkanMusik(){
     if(!sedangBunyi){
         audio.play();
-        tombol.innerText = '🔊';
+        tombol.innerText = '🔊'; // ganti ikon disini
         sedangBunyi = true;
     }else{
         audio.pause();
-        tombol.innerText = '🔇';
+        tombol.innerText = '🔇'; // ganti ikon disini
         sedangBunyi = false;
     }
-}
+    }
+    
 </script>
 
 </body>
