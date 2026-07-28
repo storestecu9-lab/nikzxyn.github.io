@@ -127,12 +127,13 @@
     cursor: pointer;
     box-shadow: 0 0 20px #7209b7;
     animation: nyalaTombol 1.5s infinite alternate;
-    z-index: 9999 !important;
+    z-index: 99999 !important;
 }
 @keyframes nyalaTombol{
     0%{box-shadow:0 0 15px #7209b7;}
     100%{box-shadow:0 0 30px #b5179e;}
 }
+        
         
     </style>
 </head>
@@ -181,7 +182,9 @@
     <source src="tiktokoa.com1785130067_HYHiBTwbWBsLuTUj0s47.mp3" type="audio/mpeg">
 
 
-<button class="tombol-musik" onclick="mainkanMusik()">🔇</button>
+
+<button class="tombol-musik" 
+    onclick="mainkanMusik()">🔇</button>
 
 <script>
 let sedangBunyi = false;
@@ -200,6 +203,7 @@ function mainkanMusik(){
     }
 }
 </script>
+    
     
 
 </body>
